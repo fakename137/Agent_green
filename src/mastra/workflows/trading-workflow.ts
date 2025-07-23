@@ -1,5 +1,19 @@
 import { createWorkflow } from '@mastra/core/workflows';
 import { z } from 'zod';
+import { createOpenAICompatible } from '@ai-sdk/openai-compatible';
+
+const gaiaProvider = createOpenAICompatible({
+  name: 'llama-3-groq-8b-tool',
+  baseURL: 'https://0x45a6c94e707bbde5ab5a9aa737b73bec2eeb67f5.gaia.domains/v1',
+  apiKey: 'not-needed',
+});
+
+/**
+ * MemeSol LLM Shortlisting Workflow
+ * 1. Aggregate all token data
+ * 2. Call Gaia node (LLM) to shortlist, score, and categorize
+ * 3. Return LLM output
+ */
 
 // Simple crypto trading workflow that uses the trading agent
 export const tradingWorkflow = createWorkflow({

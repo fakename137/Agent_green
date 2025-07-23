@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Press+Start+2P&display=swap');
+
+body {
+  @apply bg-black text-white font-degen;
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  min-height: 100vh;
+}
+
+.glass {
+  @apply bg-glass backdrop-blur-xs shadow-glass;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.neon {
+  @apply text-neon-pink drop-shadow-[0_0_8px_#ff00cc] font-degen;
+}

@@ -1,0 +1,35 @@
+{
+  "name": "dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@lit-protocol/auth-helpers": "^7.2.0",
+    "@lit-protocol/constants": "^7.2.0",
+    "@lit-protocol/contracts-sdk": "^7.2.0",
+    "@lit-protocol/lit-node-client": "^7.2.0",
+    "@lit-protocol/pkp-ethers": "^7.2.0",
+    "@lit-protocol/vincent-tool-sdk": "^1.0.2",
+    "@react-oauth/google": "^0.12.2",
+    "ethers": "^5.8.0",
+    "framer-motion": "^12.23.7",
+    "next": "15.4.2",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "zod": "^4.0.5"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.2",
+    "typescript": "^5"
+  }
+}

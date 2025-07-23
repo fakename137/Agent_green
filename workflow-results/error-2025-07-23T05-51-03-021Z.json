@@ -1,0 +1,5 @@
+{
+  "timestamp": "2025-07-23T05:51:03.023Z",
+  "error": "Cannot read properties of undefined (reading 'addEventListener')",
+  "stack": "TypeError: Cannot read properties of undefined (reading 'addEventListener')\n    at Workflow.execute (file:///Users/jayanthkoppala/iloveyou/node_modules/@mastra/core/dist/chunk-3OHBKAKC.js:2029:17)\n    at async runWorkflow (/Users/jayanthkoppala/iloveyou/run-memesol-workflow.ts:23:20)"
+}

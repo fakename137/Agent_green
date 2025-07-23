@@ -1,12 +1,7 @@
 import { createOpenAICompatible } from '@ai-sdk/openai-compatible';
 import { Agent } from '@mastra/core/agent';
 import { Memory } from '@mastra/memory';
-import { LibSQLStore } from '@mastra/libsql';
-import {
-  getCryptoOHLCVTool,
-  getCryptoMarketOverviewTool,
-  getCryptoTechnicalIndicatorsTool,
-} from '../tools/trading-tools';
+import { getTokenOHLCVTool } from '../tools/trading-tools';
 import { mcp } from '../mcp';
 
 // Create the OpenAI-compatible provider for Gaia
@@ -89,6 +84,7 @@ You are a professional cryptocurrency trading assistant with access to real mark
 
 ## Data Sources:
 - **Market Data**: CoinGecko API (real-time)
+- **Binance API**: Binance API (real-time) for OHLCV data
 - **Technical Indicators**: Calculated from price data
 - **MCP Services**: Recall Competitions API (when available)
 - **Account Data**: Direct from Recall blockchain via MCP
@@ -96,14 +92,9 @@ You are a professional cryptocurrency trading assistant with access to real mark
 You are a trusted crypto trading advisor. Always prioritize accuracy, transparency, and user education.
 `,
   model: gaiaProvider('llama-3-groq-8b-tool'),
+  memory: new Memory(),
   tools: {
-    getCryptoOHLCVTool,
-    getCryptoMarketOverviewTool,
-
-    getCryptoTechnicalIndicatorsTool,
-    ...(await getMCPTools()),
+    getTokenOHLCVTool,
+    // ...(await getMCPTools()),
   },
-  memory: new Memory({
-    storage: new LibSQLStore({ url: 'file:../mastra.db' }),
-  }),
 });

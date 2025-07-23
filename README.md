@@ -1,5 +1,5 @@
-# 🦍 Agent Green (MemeSol) – Autonomous Memecoin Trading Platform
-
+###🦍 Agent Green (MemeSol) – Autonomous Memecoin Trading Platform
+<a href="https://ibb.co/dw7M52Bk"><img src="https://i.ibb.co/Rk7bD02Q/Gemini-Generated-Image-9re0gv9re0gv9re0.png" alt="Gemini-Generated-Image-9re0gv9re0gv9re0" border="0"></a>
 ## Overview
 
 **Agent Green** (MemeSol) is an AI-powered, fully autonomous trading platform for Solana memecoins. It combines advanced LLM agents, on-chain analytics, social sentiment, and risk management to discover, analyze, and trade trending memecoins—so you don’t have to ape in blindly!

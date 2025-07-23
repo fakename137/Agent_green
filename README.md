@@ -1,6 +1,6 @@
-###🦍 Agent Green (MemeSol) – Autonomous Memecoin Trading Platform
+# 🦍 AgentGreen (MemeSol) – Autonomous Memecoin Trading Platform
 
-      <a href="https://ibb.co/dw7M52Bk"><img src="https://i.ibb.co/dw7M52Bk/Gemini-Generated-Image-9re0gv9re0gv9re0.png" alt="Gemini-Generated-Image-9re0gv9re0gv9re0" border="0"></a>
+ <img width="2048" height="2048" alt="Gemini_Generated_Image_9re0gv9re0gv9re0" src="https://github.com/user-attachments/assets/194c2822-baa6-463d-80d0-f497f9845294" />
 
 
 ## Overview

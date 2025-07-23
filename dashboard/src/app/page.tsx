@@ -212,7 +212,7 @@ export default function HomePage() {
           className="neon"
           style={{ fontSize: 56, fontFamily: "'Orbitron', monospace" }}
         >
-          Degen Investory
+          Agent Green{' '}
         </h1>
         <p
           style={{
